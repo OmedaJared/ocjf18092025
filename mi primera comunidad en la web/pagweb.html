@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página sobre Pokémon</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Pokémon World</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#intro">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destacados">Pokémon Destacados</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="#info">Más Información</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- SECCIÓN INICIO -->
+<section id="intro" class="py-5 mt-5">
+  <div class="container text-center">
+    <h1 class="display-4">Bienvenido al Mundo Pokémon</h1>
+    <p class="lead">Explora la historia, curiosidades y Pokémon más icónicos.</p>
+  </div>
+</section>
+
+<!-- SECCIÓN DESTACADOS -->
+<section id="destacados" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Pokémon Destacados</h2>
+    <div class="row g-4">
+      <!-- Tarjeta Pikachu -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" class="card-img-top" alt="Pikachu">
+          <div class="card-body">
+            <h5 class="card-title">Pikachu</h5>
+            <p class="card-text">El Pokémon eléctrico más famoso, compañero de Ash.</p>
+            <a href="https://www.pokemon.com/el/pokedex/pikachu" target="_blank" class="btn btn-primary">Más información</a>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta Charizard -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" class="card-img-top" alt="Charizard">
+          <div class="card-body">
+            <h5 class="card-title">Charizard</h5>
+            <p class="card-text">Un dragón de fuego imponente, muy querido por los fans.</p>
+            <a href="https://www.pokemon.com/el/pokedex/charizard" target="_blank" class="btn btn-primary">Más información</a>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta Bulbasaur -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" class="card-img-top" alt="Bulbasaur">
+          <div class="card-body">
+            <h5 class="card-title">Bulbasaur</h5>
+            <p class="card-text">Pokémon inicial de tipo planta/veneno de la primera generación.</p>
+            <a href="https://www.pokemon.com/el/pokedex/bulbasaur" target="_blank" class="btn btn-primary">Más información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN GALERÍA (CARROUSEL) -->
+<section id="galeria" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Galería Pokémon</h2>
+    <div id="carouselPokemon" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://assets.pokemon.com/assets/cms2/img/misc/countries/es/country_detail_pokemon.png" class="d-block w-100" alt="Pokémon World">
+        </div>
+        <div class="carousel-item">
+          <img src="https://assets.pokemon.com/assets/cms2/img/video-games/_tiles/pokemon-scarlet-violet/09122022/pokemon-scarlet-violet-169.jpg" class="d-block w-100" alt="Scarlet Violet">
+        </div>
+        <div class="carousel-item">
+          <img src="https://assets.pokemon.com/assets/cms2/img/misc/countries/es/country_detail_tradingcards.png" class="d-block w-100" alt="Cartas Pokémon">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPokemon" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselPokemon" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN MÁS INFORMACIÓN -->
+<section id="info" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2>Más Información</h2>
+    <p>Visita la página oficial para más detalles sobre Pokémon:</p>
+    <a href="https://www.pokemon.com/el/" target="_blank" class="btn btn-success">Página Oficial de Pokémon</a>
+  </div>
+</section>
+
+<!-- SECCIÓN CONTACTO -->
+<section id="contacto" class="py-5">
+  <div class="container text-center">
+    <h2>Contacto</h2>
+    <p>Creado por: <strong>Jared</strong></p>
+    <p>Email: tuemail@example.com</p>
+    <p>© 2025 Todos los derechos reservados</p>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
